@@ -13,12 +13,14 @@ $accent-07: rgba($accent, 0.7);
   transition: background-color 0.15s ease;
   cursor: pointer;
   color: #fff;
+
   &:hover {
     background-color: $accent-07;
   }
 
   &.main {
     background-color: rgba(255, 255, 255, 0.2);
+
     &:hover {
       background-color: $accent-04;
     }

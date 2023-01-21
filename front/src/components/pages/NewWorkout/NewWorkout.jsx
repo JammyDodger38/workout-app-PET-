@@ -8,6 +8,7 @@ import Button from '../../ui/Button/Button'
 
 import styles from './NewWorkout.module.scss'
 import { optionColor } from './optionClolor'
+import { Link } from 'react-router-dom'
 
 const NewWorkout = () => {
   const [name, setName] = useState('')
@@ -28,6 +29,9 @@ const NewWorkout = () => {
             onChange={e => setName(e.target.value)}
             required
           />
+          <Link to="/new-exercise" className="dark-link">
+            Add new exercise
+          </Link>
           <ReactSelect
             classNamePrefix="select2-selection"
             placeholder="Exercises..."
